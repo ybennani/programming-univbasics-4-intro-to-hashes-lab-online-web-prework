@@ -1,46 +1,34 @@
 def new_hash
-  new_hash = {}
+{}
 end
 
-def my_hash
-  my_hash = {
-"bread" => 2,
-"milk" =>  3,
-"eggs" =>  9
-}
-my_hash
+
+ def my_hash
+   	  { "Programming" => "is great!" }
 end
 
-def pioneer
-pioneer =
-{
- :name => "grace_hopper"
-}
- pioneer[:grace_hoppe]
+
+ def pioneer
+	  {name: 'Grace Hopper'}
 end
 
-def id_generator
-  id_generator ={
-    :id => 456
-  }
-id_generator[:id]
 
+ def id_generator
+  	  {id: 4}
 end
 
-def my_hash_creator(key, value)
-  my_hash_creator ={
-    :id => 456
-  }
-my_hash_creator[:id]
- return a hash that includes the key and value parameters passed into this method
+
+ def my_hash_creator(key, value)
+  	  {key => value}
 end
 
-def read_from_hash(hash, key)
-  # return the correct value using the hash and key parameters
+
+ def read_from_hash(hash, key)
+    hash[key]
 end
 
-def update_counting_hash(hash, key)
-  # given a hash an a key as parameters, return an updated hash
-  # if the provided key is not present in the hash, add it and assign it to the value of 1
-  # if the provided key is present, increment its value by 1
+
+ def update_counting_hash(hash, key)
+   	  hash[key] ? hash[key] += 1 : hash[key] = 1
+
 end
